@@ -1,0 +1,243 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* Header Section Start   */
+header{
+    width: 100%; /*vw = View-Width = width of Screee-width will be same as width of header. */
+    height: 50px;
+    color: #fff;    
+    display: flex;
+    padding: 0px 100px;    
+    align-items: center;
+    background:#022D7C;
+    justify-content: space-between;
+}
+/* /Header Section End   */
+
+/* Banner Section Start */
+.banner{
+    width: 100%;
+    height: 600px;
+    color: #fff;
+    display: flex;
+    padding: 0px 100px;    
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+                 url(../img/Industrial.jpg);
+    background-size: cover;
+}
+.banner h1{ 
+    font-size: 55px;
+    font-weight: normal;
+}
+.banner h1 span { 
+    display: block;
+    font-size: 77px;
+    font-weight: 600;    
+}
+
+/* aside Section Start */
+.banner aside{ /* Box-border */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;    
+    background: #022D7C;
+} 
+.banner aside input[type] , 
+.banner aside textarea ,
+.banner aside button {    
+  
+    width: 100%;       
+    height: 50px;           
+}
+/* aside Section End */
+
+/* /Banner Section End */
+
+/* Feature Section Start  */
+.feature{
+    width: 100%;
+    height: auto;
+    display: flex;
+    color: #022D7C;
+    padding: 60px 100px;
+    justify-content: space-around; 
+}
+.feature div{
+    width: 30%;
+    height: 400px;
+}
+.feature div h2 {
+    font-size: 30px;
+    margin-bottom: 7px;
+}
+.feature div img{
+    width: 270px;
+    height: 200px;
+} 
+.feature div p{
+    margin-top: 5px;
+    font-size: 16px;
+    text-align: justify;
+}
+/* / Feature Section End  */
+
+/* About us Section Start  */
+.about{
+    width: 100%;
+    height: auto;
+    color: #fff;
+    text-align: center;
+    padding: 50px 200px;
+    background: #022D7C;
+}
+.about h2{
+    font-size: 33px;
+    margin-bottom: 10px;
+}
+.about p{
+    font-size: 18px;
+    font-weight: normal;
+}
+.about button{
+    color: #fff;
+    margin-top: 40px;
+    font-weight: bold;
+    padding: 15px 120px;
+    background: #022D7C;
+    border: 3px solid #fff;
+    border-radius: 6px;
+}
+/* About us Section End  */
+
+/* Our Service Section Start  */
+.service{
+    width: 100%;
+    height: auto;
+    padding: 0px 100px;    
+}
+.service .upper, .service .lower {
+    display: flex;
+    align-items: center ;
+}
+.service .image ,
+.service .content {
+    width: 50%;    
+}
+.service .image img {
+    width: 460px;
+    height: 500px;
+}
+.service .upper .content {
+    text-align: justify;;
+    padding :40px 0px 40px 100px;
+}
+.service .lower .content {
+    text-align: justify;
+    padding :0px 40px 0px 0px;
+}
+.service h3 {    
+    font-size: 35px; }
+.service p{
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 25px;
+}
+
+/* Our Service Section End  */
+
+/* Footer Section Start */
+footer {
+    width: 100%;
+    height: auto;    
+    text-align: center;
+    padding: 25px 100px;
+    color: #fff;
+    background : #022D7C;
+}
+/* Footer Section End  */
+
+/* Media Query Section Start */
+@media screen and (max-width : 991px) {
+    header{
+        padding: 10px; 
+    }
+    header h2{
+        font-size: 24px;
+    }
+    .banner{
+        padding: 10px;
+        
+    }
+    .feature{
+        padding: 50px 0px ;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .feature div {
+        width: 35%;
+        height: 450px;
+    }
+    .feature div img,p {
+        margin-left: -50%;
+    }
+    .feature div h2 {
+        margin: 0px;
+    }    
+    .about{
+        padding: 20px;
+    }
+    .service {
+        padding: 10px;
+    }
+    .service .upper, 
+    .service .lower{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .service .image,
+    .service .content {
+        width: auto;
+        padding-left: 0px !important;
+    }
+}
+
+@media screen and (max-width : 768px) { 
+    header h2 {
+        font-size: 14px;
+    }
+    header h2 span{
+        text-wrap: nowrap;
+        font-size: 10px;
+    }
+    .banner{
+        height: auto;
+        padding: 10px;
+        flex-direction: column;
+
+    }
+    .banner h1{ 
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    .banner h1 span {
+        font-size: 42px;
+    }
+    .feature h2 {
+    }
+
+    p {
+        padding: 0px;
+
+        text-align: center;
+    }
+    footer{
+        padding-left: 45px;
+    }
+}
+/* Media Query Section End  */
